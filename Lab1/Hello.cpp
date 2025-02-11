@@ -1,5 +1,5 @@
 /*
-This is to output hello world in VSCode while also learning version
+This is to output hello world in the VSCode IDE while also learning version
 control through Github Desktop.
 */
 
