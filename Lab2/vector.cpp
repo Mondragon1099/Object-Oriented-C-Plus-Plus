@@ -5,11 +5,14 @@ using namespace std;
 * @brief prints the elements in the vector and their memory locations
 * 
 * @param v - vector of integers
+* %lu is placeholder for unsigned long
+* In C, format specifiers are special characters that begin with the modulus/per cent symbol (%),
+* followed by a character indicating the data type.
 */
 void printMemVec(const vector<int>& v) { //const as to not modify the vector, and & for pass by reference
     printf("Vector - Each int is worth %lu bytes\n", sizeof(v.at(0)));
     for(int i = 0; i < v.size(); i++){
-        printf("Value :%i at Memory Location: %p\n", v.at(i), &v.at(i)); //&v.at(i) to get memory address
+        printf("Value :%i at Memory Location: %p\n", v.at(i), &v.at(i)); //&v.at(i) to get memory address // %p displays the address in a hexadecimal format
     }
 }
 /**
