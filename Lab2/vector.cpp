@@ -12,7 +12,7 @@ using namespace std;
 void printMemVec(const vector<int>& v) { //const as to not modify the vector, and & for pass by reference
     printf("Vector - Each int is worth %lu bytes\n", sizeof(v.at(0)));
     for(int i = 0; i < v.size(); i++){
-        printf("Value :%i at Memory Location: %p\n", v.at(i), &v.at(i)); //&v.at(i) to get memory address // %p displays the address in a hexadecimal format
+        printf("Value :%i at Memory Location: %p\n", v.at(i), &v.at(i)); //&v.at(i) to get memory address // %p format specifier for pointer, gives memory address in hexadecimal
     }
 }
 /**
