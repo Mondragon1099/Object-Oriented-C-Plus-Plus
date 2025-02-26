@@ -14,10 +14,10 @@ class RPG {
     //COMPLETE THE REST
     //Mututators
     void setSkills();
-    void printAction(string);
+    void printAction(string, RPG);
     void updateHealth(int);
-    void attack(); // not finihsed 
-    void useSkills(); // not finished
+    //void attack(); // not finished
+    //void useSkills(); // not finished
 
     //Accessors
     bool isAlive() const;
