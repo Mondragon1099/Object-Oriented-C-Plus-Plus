@@ -1,6 +1,7 @@
-#include "Charmander.h"
 #include <stdio.h>
 #include <iostream>
+#include "Charmander.h"
+using namespace std;
 /**
  * @brief Construct a new Charmander:: Charmander object
  * 
@@ -22,14 +23,12 @@ Charmander::Charmander() : Pokemon() {
  * @param def
  * @param t
  */
-Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s) : Pokemon() {
+Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s) :
     Pokemon(name, hp, att, def, t){
         type = t;
         skills = s;
         cout << "Overloaded Constructor (Charmander) \n";
     }
-
-}
 
 /**
  * @brief says what a charmander says

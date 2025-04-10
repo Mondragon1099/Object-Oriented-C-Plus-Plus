@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Charmander.h"
 using namespace std;
+#include <vector>
 
 int main(){
     //Charmander first = Charmander();
