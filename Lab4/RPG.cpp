@@ -59,6 +59,7 @@ void RPG::attack(RPG *opponent) {
     int newHealth;
     
     //if() prevents low strength from decreasing opponent health
+    // Note: opponent->getDefense() is the same as (*opponent).getDefense()
     if(getStrength() > opponent->getDefense()){
         newHealth = (opponent->getHealth()) - (abs(getStrength() - opponent->getDefense())); //abs() fixes the health error
         opponent->updateHealth(newHealth);
